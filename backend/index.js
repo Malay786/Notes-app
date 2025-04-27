@@ -11,7 +11,7 @@ import noteRoutes from './routes/noteRoutes.js';
 const app = express();
 
 app.use(cors({
-    origin: "https://notes-app-gamma-sepia.vercel.app",  // Vercel frontend URL
+    origin: "https://notes-app-git-main-dewarimalay-gmailcoms-projects.vercel.app/",  // Vercel frontend URL
     credentials: true
 }));
 app.use(express.json());
