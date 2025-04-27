@@ -10,7 +10,10 @@ import noteRoutes from './routes/noteRoutes.js';
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: "https://notes-app-gamma-sepia.vercel.app",  // Vercel frontend URL
+    credentials: true
+}));
 app.use(express.json());
 app.use("/api/auth", authRoutes)
 app.use("/api/notes", noteRoutes)
